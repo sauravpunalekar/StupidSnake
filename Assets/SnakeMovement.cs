@@ -15,6 +15,7 @@ public class SnakeMovement : MonoBehaviour {
 	Vector2  dir;
 	public int speed;
 
+
 	// Use this for initialization
 	void Start () {
 		playerpos = this.gameObject.transform.position;
@@ -28,6 +29,7 @@ public class SnakeMovement : MonoBehaviour {
 			PlayerRotate ();
 		}
 		PlayerMove ();
+
 	}
 
 	void PlayerRotate () {
