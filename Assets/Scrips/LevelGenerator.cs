@@ -15,14 +15,16 @@ public class LevelGenerator : MonoBehaviour {
 		for (int i = 0; i < count; i++) {
 			GameObject g = (GameObject)Resources.Load ("Enemy");
 			int path = int.Parse (json ["enemy" + (i+1).ToString ()][0].ToString());
+            g.GetComponent<EnemyAI2>().pathCount = path;
 			Vector3[] v = new Vector3[path];
 			for (int j = 0; j < path*2; j+=2) {
 				v [j/2] = new Vector3 (int.Parse (json ["enemy" + (i+1).ToString ()][j+1].ToString()),int.Parse (json ["enemy" + (i+1).ToString ()][j+2].ToString()),0);
 
 			}
 
-			Instantiate (g).GetComponent<enemyMovement> ().path = v;
-
+            Instantiate(g);
+            g.GetComponent<EnemyAI2>().enemyPath = v;
+            g.transform.position = v[0];
 		}
 
 	}

@@ -5,7 +5,6 @@ using UnityEngine;
 public class enemyMovement : MonoBehaviour {
 
 	public Vector3[] path;
-	public float speed = 5.0f;
 	public int currentPoint = 0;
 
 	// Use this for initialization
@@ -18,7 +17,7 @@ public class enemyMovement : MonoBehaviour {
 
 		Vector3 dir = path[currentPoint] - transform.position;
 
-		transform.position += dir * Time.deltaTime * speed;
+        transform.position += dir * Time.deltaTime * new EnemyAI2().patrolSpeed;
 
 		if (dir.magnitude < 1.0f) {
 			currentPoint++;
@@ -27,13 +26,6 @@ public class enemyMovement : MonoBehaviour {
 			};
 			pointToPath ();
 		};
-
-
-
-
-
-
-
 	}
 
 	void pointToPath(){
