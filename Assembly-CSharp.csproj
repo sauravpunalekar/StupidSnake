@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{27E3B7BB-7210-4DB8-2CDE-8C5F9221D3B6}</ProjectGuid>
+    <ProjectGuid>{C9D6018F-4158-90AC-7710-EABE12F9C4DD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,8 +46,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ScreenWrap.cs" />
-     <Compile Include="Assets\SnakeMovement.cs" />
+     <Compile Include="Assets\Scrips\Json\IJsonWrapper.cs" />
+     <Compile Include="Assets\Scrips\Json\JsonData.cs" />
+     <Compile Include="Assets\Scrips\Json\JsonException.cs" />
+     <Compile Include="Assets\Scrips\Json\JsonMapper.cs" />
+     <Compile Include="Assets\Scrips\Json\JsonMockWrapper.cs" />
+     <Compile Include="Assets\Scrips\Json\JsonReader.cs" />
+     <Compile Include="Assets\Scrips\Json\JsonWriter.cs" />
+     <Compile Include="Assets\Scrips\Json\Lexer.cs" />
+     <Compile Include="Assets\Scrips\Json\ParserToken.cs" />
+     <Compile Include="Assets\Scrips\LevelGenerator.cs" />
+     <Compile Include="Assets\Scrips\ScreenWrap.cs" />
+     <Compile Include="Assets\Scrips\SnakeMovement.cs" />
+     <Compile Include="Assets\Scrips\enemyMovement.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

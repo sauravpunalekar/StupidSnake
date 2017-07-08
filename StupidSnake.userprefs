@@ -1,8 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SnakeMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrips\Enemy.json">
     <Files>
-      <File FileName="Assets\SnakeMovement.cs" Line="14" Column="1" />
+      <File FileName="Assets\Scrips\LevelGenerator.cs" Line="24" Column="18" />
+      <File FileName="Assets\Scrips\Enemy.json" Line="24" Column="24" />
+      <File FileName="Assets\Scrips\enemyMovement.cs" Line="7" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
