@@ -28,6 +28,9 @@ public class SnakeMovement : MonoBehaviour {
 		if(Input.GetMouseButtonDown(0)) {
 			PlayerRotate ();
 		}
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
+            PlayerRotateTouch();
+        }
 		PlayerMove ();
 
 	}
@@ -40,6 +43,15 @@ public class SnakeMovement : MonoBehaviour {
 		dir = (Camera.main.ScreenToWorldPoint (Input.mousePosition) - this.gameObject.transform.position);
 		dir.Normalize ();
 	}
+
+    void PlayerRotateTouch() {
+        playerPosition = Camera.main.WorldToViewportPoint(this.gameObject.transform.position);
+        mouseOnScreen = (Vector2)Camera.main.ScreenToViewportPoint(Input.GetTouch(0).position);
+        float angle = AngleBetweenTwoPoints(playerPosition, mouseOnScreen);
+        this.gameObject.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle + 90));
+        dir = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - this.gameObject.transform.position);
+        dir.Normalize();
+    }
 
 	float AngleBetweenTwoPoints (Vector3 a, Vector3 b) {
 		return Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;

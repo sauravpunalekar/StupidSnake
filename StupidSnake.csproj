@@ -90,7 +90,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scrips\EnemyAI.cs" />
+    <Compile Include="Assets\Scrips\DestroyPlayer.cs" />
     <Compile Include="Assets\Scrips\EnemyAI2.cs" />
     <Compile Include="Assets\Scrips\Json\IJsonWrapper.cs" />
     <Compile Include="Assets\Scrips\Json\JsonData.cs" />

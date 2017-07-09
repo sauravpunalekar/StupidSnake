@@ -106,7 +106,7 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 1067
-  m_MinSize: {x: 683, y: 492}
+  m_MinSize: {x: 681, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
   controlID: 44
@@ -130,7 +130,7 @@ MonoBehaviour:
     y: 0
     width: 1368
     height: 1067
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
   controlID: 45
@@ -154,8 +154,8 @@ MonoBehaviour:
     y: 0
     width: 1368
     height: 578
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
   controlID: 46
 --- !u!114 &8
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 402
     height: 578
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -365,23 +365,23 @@ MonoBehaviour:
     height: 557
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 16260000
-    m_LastClickedID: 9750
-    m_ExpandedIDs: 3223faffae39faff823ffaffd44ffaffb2fffaff387afbffc8b0fbffe4bdfbff56e0fbffe8f4ffffc8fbffff00000000fe250000
+    m_SelectedIDs: b4060000
+    m_LastClickedID: 0
+    m_ExpandedIDs: c8fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Enemy
-      m_OriginalName: Enemy
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -34354
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -451,9 +451,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.929714
+    m_Target: 16.528141
     speed: 2
-    m_Value: 4.929714
+    m_Value: 16.528141
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -527,19 +527,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Resources
+    - Assets/Scrips
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources
+  - Assets/Scrips
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\xampp\htdocs\Unity\StupidSnake
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 92250000
-    m_LastClickedID: 9618
-    m_ExpandedIDs: 0000000014250000b225000000ca9a3bffffff7f
+    m_SelectedIDs: ac250000
+    m_LastClickedID: 9644
+    m_ExpandedIDs: 0000000010250000ac25000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -567,7 +567,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000014250000b2250000
+    m_ExpandedIDs: 0000000010250000ac250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -646,7 +646,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 670
-    width: 1365
+    width: 1366
     height: 468
 --- !u!114 &18
 MonoBehaviour:
