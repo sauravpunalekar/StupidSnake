@@ -10,7 +10,9 @@ public class LevelGenerator : MonoBehaviour {
 	JsonData json;
 	// Use this for initialization
 	void Start () {
-		json = JsonMapper.ToObject (File.ReadAllText(Application.dataPath+"/Scrips/Enemy.json"));
+		TextAsset file = Resources.Load("Level1") as TextAsset;
+		string content = file.ToString ();
+		json = JsonMapper.ToObject (content);
 		int count = int.Parse (json ["count"].ToString());
 		for (int i = 0; i < count; i++) {
 			GameObject g = (GameObject)Resources.Load ("Enemy");
