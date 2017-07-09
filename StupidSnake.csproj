@@ -92,6 +92,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scrips\DestroyPlayer.cs" />
     <Compile Include="Assets\Scrips\EnemyAI2.cs" />
+    <Compile Include="Assets\Scrips\FoodDestroy.cs" />
     <Compile Include="Assets\Scrips\Json\IJsonWrapper.cs" />
     <Compile Include="Assets\Scrips\Json\JsonData.cs" />
     <Compile Include="Assets\Scrips\Json\JsonException.cs" />

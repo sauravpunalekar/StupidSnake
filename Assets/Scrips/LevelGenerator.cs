@@ -26,13 +26,23 @@ public class LevelGenerator : MonoBehaviour {
 
             Instantiate(g);
             g.GetComponent<EnemyAI2>().enemyPath = v;
-            g.transform.position = v[0];
+            g.transform.position = v[0];               
 		}
-
-	}
+        FoodInit();
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+    void FoodInit() {
+        int foodcount = int.Parse(json["food"][0].ToString());
+        for (int i = 1; i <= foodcount*2; i+=2) {
+            float x = float.Parse(json["food"][i].ToString());
+            float y = float.Parse(json["food"][i+1].ToString());
+            GameObject g = (GameObject)Resources.Load("cheese");
+            Instantiate(g).transform.position = new Vector3(x, y, 0);
+        }
+    }
 }

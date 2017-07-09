@@ -17,6 +17,8 @@ public class DestroyPlayer : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene(0);
+        if (collision.gameObject.name == "Enemy(Clone)") {
+            SceneManager.LoadScene(0);
+        }
     }
 }
