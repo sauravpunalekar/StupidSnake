@@ -18,6 +18,7 @@ public class FoodDestroy : MonoBehaviour {
         Debug.Log("H");
         if (collision.gameObject.name == "Player") {
             Debug.Log("Hi");
+			ScoreManager.currentscore++;
             Destroy(this.gameObject);
         }
     }
