@@ -18,7 +18,26 @@ public class DestroyPlayer : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Enemy(Clone)") {
-            SceneManager.LoadScene(0);
+			Destroy (collision.gameObject);
+			Handheld.Vibrate ();
+
+			StartCoroutine ("Blink");
+
+           
         }
     }
+
+	IEnumerator Blink()
+	{
+		for (int i = 0; i < 4; i++) {
+			this.GetComponent<SnakeMovement> ().speed = 0;
+			this.gameObject.GetComponent<Renderer> ().enabled = false;
+			yield return new WaitForSeconds (0.1f);
+			this.gameObject.GetComponent<Renderer> ().enabled = true;
+			yield return new WaitForSeconds (0.1f);
+		}
+		SceneManager.LoadSceneAsync(1);
+	}
+
 }
+
