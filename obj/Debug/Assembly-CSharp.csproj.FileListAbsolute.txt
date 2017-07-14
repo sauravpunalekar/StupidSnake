@@ -58,8 +58,10 @@ C:\Users\G3n\Documents\StupidSnake\Temp\bin\Debug\nunit.framework.xml
 C:\Users\G3n\Documents\StupidSnake\Temp\bin\Debug\UnityEngine.Analytics.xml
 C:\Users\G3n\Documents\StupidSnake\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\G3n\Documents\StupidSnake\Temp\bin\Debug\UnityEngine.VR.xml
+C:\Users\G3n\Documents\StupidSnake\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\G3n\Documents\StupidSnake\obj\Debug\Assembly-CSharp.dll
 C:\Users\G3n\Documents\StupidSnake\obj\Debug\Assembly-CSharp.pdb
+<<<<<<< HEAD
 C:\Users\G3n\Documents\StupidSnake\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\aksha\Documents\Unity Projects\StupidSnake\Temp\bin\Debug\Assembly-CSharp.dll
 C:\Users\aksha\Documents\Unity Projects\StupidSnake\Temp\bin\Debug\Assembly-CSharp.pdb
@@ -93,3 +95,5 @@ C:\Users\aksha\Documents\Unity Projects\StupidSnake\Temp\bin\Debug\UnityEngine.V
 C:\Users\aksha\Documents\Unity Projects\StupidSnake\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\aksha\Documents\Unity Projects\StupidSnake\obj\Debug\Assembly-CSharp.dll
 C:\Users\aksha\Documents\Unity Projects\StupidSnake\obj\Debug\Assembly-CSharp.pdb
+=======
+>>>>>>> 06c7f9311c31d0e66b23d19c752c5c2454b16784
