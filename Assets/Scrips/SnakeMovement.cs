@@ -28,7 +28,7 @@ public class SnakeMovement : MonoBehaviour {
 		if(Input.GetMouseButtonDown(0)) {
 			PlayerRotate ();
 		}
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
+        if (Input.touchCount > 0 && (Input.GetTouch(0).phase == TouchPhase.Began || Input.GetTouch(0).phase == TouchPhase.Moved)) {
             PlayerRotateTouch();
         }
 		PlayerMove ();

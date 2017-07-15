@@ -16,7 +16,8 @@ public class PrtcleEfct : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collision){
 		if (collision.gameObject.name == "Player") {
-			ScoreManager.currentscore++;
+            GetComponent<AudioSource>().Play();
+            ScoreManager.currentscore++;
 			var em = cheese.emission;
 			em.enabled = true;
 			GetComponent<Renderer> ().enabled = false;
