@@ -7,10 +7,6 @@ public class ScreenWrap : MonoBehaviour {
     public float minY;
     public float maxX;
 	public float maxY;
-	// Use this for initialization
-	void Start () {
-
-    }
 	
 	// Update is called once per frame
 	void Update () {
