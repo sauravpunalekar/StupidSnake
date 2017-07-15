@@ -61,12 +61,9 @@
      <Compile Include="Assets\Scrips\Json\ParserToken.cs" />
      <Compile Include="Assets\Scrips\LevelCreationSpawn.cs" />
      <Compile Include="Assets\Scrips\LevelGenerator.cs" />
-<<<<<<< HEAD
-     <Compile Include="Assets\Scrips\PrtcleEfct.cs" />
-=======
      <Compile Include="Assets\Scrips\MoveObject.cs" />
+     <Compile Include="Assets\Scrips\PrtcleEfct.cs" />
      <Compile Include="Assets\Scrips\SceneLoader.cs" />
->>>>>>> 06c7f9311c31d0e66b23d19c752c5c2454b16784
      <Compile Include="Assets\Scrips\ScoreManager.cs" />
      <Compile Include="Assets\Scrips\ScreenWrap.cs" />
      <Compile Include="Assets\Scrips\SnakeMovement.cs" />

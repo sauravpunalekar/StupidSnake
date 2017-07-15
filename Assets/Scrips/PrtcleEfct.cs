@@ -5,29 +5,29 @@ using UnityEngine;
 public class PrtcleEfct : MonoBehaviour {
 
 	public Transform boom;
-
+	ParticleSystem cheese;
+	 
 	// Use this for initialization
 	void Start () {
-		boom.GetComponent<ParticleSystem> ().enableEmission = false;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+		cheese = boom.GetComponent<ParticleSystem> ();
+		var em = cheese.emission;
+		em.enabled = false;
 	}
 
-	private void OnCollisionEnter2D(Collision2D collision){
+	void OnCollisionEnter2D(Collision2D collision){
 		if (collision.gameObject.name == "Player") {
-			//ScoreManager.currentscore++;
-			boom.GetComponent<ParticleSystem> ().enableEmission = true;
-			//Destroy (this.gameObject);
+			ScoreManager.currentscore++;
+			var em = cheese.emission;
+			em.enabled = true;
+			GetComponent<Renderer> ().enabled = false;
 			StartCoroutine (StopBoom());
 		}
 	}
 
 	IEnumerator StopBoom() {
 		yield return new WaitForSeconds(0.8f);
-		boom.GetComponent<ParticleSystem> ().enableEmission = false;
+		var em = cheese.emission;
+		em.enabled = false;
 		Destroy(this.gameObject);
 	}
 }

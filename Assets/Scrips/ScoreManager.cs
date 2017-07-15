@@ -10,6 +10,7 @@ public class ScoreManager : MonoBehaviour {
 	public static int currentlevel=1;
 	public static int maxlevel=3;
 	JsonData json;
+
 	// Use this for initialization
 	void Start () {
 		currentscore = 0;
@@ -25,15 +26,13 @@ public class ScoreManager : MonoBehaviour {
 				currentlevel = 1;
 				SceneManager.LoadSceneAsync(1);
 			}
-			else {
-				
+			else {				
 				currentlevel++;
 				SceneManager.LoadSceneAsync(1);
-				}
-
-		}
-		
+			}
+		}		
 	}
+
 	int GetReqScore()
 	{
 		TextAsset file = Resources.Load("Level"+ScoreManager.currentlevel) as TextAsset;

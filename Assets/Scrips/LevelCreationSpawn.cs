@@ -13,6 +13,7 @@ public class LevelCreationSpawn : MonoBehaviour {
 	string way = "Tap on the screen to place waypoints for the snake";
 	int state=1;
 	int count=0;
+
 	void Start () {
 		text1.text = enemy;
 		Instantiate ((GameObject)Resources.Load ("tick"));
