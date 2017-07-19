@@ -1,3 +1,4 @@
+C:\Users\aksha\Documents\Unity Projects\StupidSnake\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\aksha\Documents\Unity Projects\StupidSnake\Temp\bin\Debug\Assembly-CSharp.dll
 C:\Users\aksha\Documents\Unity Projects\StupidSnake\Temp\bin\Debug\Assembly-CSharp.pdb
 C:\Users\aksha\Documents\Unity Projects\StupidSnake\Temp\bin\Debug\Facebook.Unity.Settings.dll
@@ -27,6 +28,5 @@ C:\Users\aksha\Documents\Unity Projects\StupidSnake\Temp\bin\Debug\nunit.framewo
 C:\Users\aksha\Documents\Unity Projects\StupidSnake\Temp\bin\Debug\UnityEngine.Analytics.xml
 C:\Users\aksha\Documents\Unity Projects\StupidSnake\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\aksha\Documents\Unity Projects\StupidSnake\Temp\bin\Debug\UnityEngine.VR.xml
-C:\Users\aksha\Documents\Unity Projects\StupidSnake\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\aksha\Documents\Unity Projects\StupidSnake\obj\Debug\Assembly-CSharp.dll
 C:\Users\aksha\Documents\Unity Projects\StupidSnake\obj\Debug\Assembly-CSharp.pdb
