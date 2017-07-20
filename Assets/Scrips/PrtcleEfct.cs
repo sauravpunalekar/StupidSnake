@@ -21,13 +21,14 @@ public class PrtcleEfct : MonoBehaviour {
             GetComponent<AudioSource>().Play();
 			em.enabled = true;
 			GetComponent<Renderer> ().enabled = false;
-			//ScoreManager.currentscore++;
+			ScoreManager.currentscore++;
 			StartCoroutine (StopBoom());
 		}
 	}
 
 	IEnumerator StopBoom() {
-		yield return new WaitForSeconds(0.8f);
+		yield return new WaitForFixedUpdate ();
+		yield return new WaitForSeconds(1.2f);
 		em.enabled = false;
 		Destroy(this.gameObject);
 	}
