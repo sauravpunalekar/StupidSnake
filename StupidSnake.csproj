@@ -90,8 +90,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Resources\LongPressSelector.cs" />
     <Compile Include="Assets\Scrips\DestroyEnemyScript.cs" />
+    <Compile Include="Assets\Scrips\DestroyEnemyScript1.cs" />
     <Compile Include="Assets\Scrips\DestroyPlayer.cs" />
     <Compile Include="Assets\Scrips\EnemyAI2.cs" />
     <Compile Include="Assets\Scrips\FoodDestroy.cs" />
@@ -106,7 +106,6 @@
     <Compile Include="Assets\Scrips\Json\ParserToken.cs" />
     <Compile Include="Assets\Scrips\LevelCreationSpawn.cs" />
     <Compile Include="Assets\Scrips\LevelGenerator.cs" />
-    <Compile Include="Assets\Scrips\MoveObject.cs" />
     <Compile Include="Assets\Scrips\PrtcleEfct.cs" />
     <Compile Include="Assets\Scrips\SceneLoader.cs" />
     <Compile Include="Assets\Scrips\ScoreManager.cs" />
