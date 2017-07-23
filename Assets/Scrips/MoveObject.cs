@@ -47,7 +47,7 @@ public class MoveObject : MonoBehaviour {
 					//do stuff as a tap​
 				} else {
 					Handheld.Vibrate ();
-					//generateButtons ();
+					generateButtons ();
 				}
 			}
 
@@ -55,7 +55,8 @@ public class MoveObject : MonoBehaviour {
 		}
 	}
 	void generateButtons(){
-		
+		Instantiate (Resources.Load ("tick"));
+		Instantiate (Resources.Load ("cross"));
 	}
 
 

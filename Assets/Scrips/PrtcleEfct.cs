@@ -10,19 +10,9 @@ public class PrtcleEfct : MonoBehaviour {
 	 
 	// Use this for initialization
 	void Start () {
-<<<<<<< HEAD
-		boom.GetComponent<ParticleSystem> ().enableEmission = false;
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-=======
 		cheese = boom.GetComponent<ParticleSystem> ();
 		em = cheese.emission;
 		em.enabled = false;
->>>>>>> 1575590c19ecdce1215312c65b75b3b75b8a5ead
 	}
 
 	void OnCollisionEnter2D(Collision2D collision){		

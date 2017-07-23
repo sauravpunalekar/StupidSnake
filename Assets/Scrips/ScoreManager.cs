@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour {
 	public static int currentscore;
 	public static int reqscore;
 	public static int currentlevel=1;
-	public static int maxlevel=4;
+	public static int maxlevel=3;
 	JsonData json;
 
 	// Use this for initialization
@@ -24,21 +24,13 @@ public class ScoreManager : MonoBehaviour {
 			Debug.Log ("Level Completed");
 			if (currentlevel == maxlevel) {
 				currentlevel = 1;
-				SceneManager.LoadScene(1);
+				SceneManager.LoadSceneAsync(1);
 			}
 			else {				
 				currentlevel++;
-<<<<<<< HEAD
-				SceneManager.LoadScene(1);
-				}
-
-		}
-		
-=======
 				SceneManager.LoadSceneAsync(1);
 			}
 		}		
->>>>>>> 1575590c19ecdce1215312c65b75b3b75b8a5ead
 	}
 
 	int GetReqScore()
