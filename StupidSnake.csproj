@@ -91,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Resources\LongPressSelector.cs" />
+    <Compile Include="Assets\Scrips\DestroyEnemyScript.cs" />
     <Compile Include="Assets\Scrips\DestroyPlayer.cs" />
     <Compile Include="Assets\Scrips\EnemyAI2.cs" />
     <Compile Include="Assets\Scrips\FoodDestroy.cs" />
