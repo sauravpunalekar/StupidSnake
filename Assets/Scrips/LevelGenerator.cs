@@ -11,7 +11,6 @@ public class LevelGenerator : MonoBehaviour {
 	public JsonData json;
 	// Use this for initialization
 	void Start () {
-		
 		GenerateLevel ();
     }
 	
@@ -21,9 +20,10 @@ public class LevelGenerator : MonoBehaviour {
 	}
 	public void GenerateLevel(){
 		
-		TextAsset file = Resources.Load("Level"+ScoreManager.currentlevel.ToString()) as TextAsset;
+		TextAsset file = Resources.Load("Levels") as TextAsset;
 		string content = file.ToString ();
 		json = JsonMapper.ToObject (content);
+		json = json ["Levels"] [ScoreManager.currentlevel - 1];
 		EnemyInit ();
 		FoodInit();
 	}
@@ -38,10 +38,12 @@ public class LevelGenerator : MonoBehaviour {
 			v [j/2] = new Vector3 (int.Parse (json ["enemy" + (i+1).ToString ()][j+1].ToString()),int.Parse (json ["enemy" + (i+1).ToString ()][j+2].ToString()),0);
 				Debug.Log (v[j/2].ToString());
 			}
-			Instantiate(g);
 			g.GetComponent<EnemyAI2> ().enemyPath = v;
+			g.transform.position = v[0];
+			Instantiate(g);	
 
-			g.transform.position = v[0];     
+
+			     
 
 		}
 	}
@@ -56,4 +58,5 @@ public class LevelGenerator : MonoBehaviour {
             Instantiate(g).transform.position = new Vector3(x, y, 0);
         }
     }
+
 }

@@ -9,6 +9,7 @@ public class PrtcleEfct : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		boom.GetComponent<ParticleSystem> ().enableEmission = false;
+	
 	}
 	
 	// Update is called once per frame
