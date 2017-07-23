@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LongPressSelector : MonoBehaviour {
+public class DestroyEnemyScript1 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
