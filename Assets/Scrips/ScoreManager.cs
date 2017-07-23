@@ -34,10 +34,15 @@ public class ScoreManager : MonoBehaviour {
 	}
 
 	int GetReqScore()
-	{
+	{/*
 		TextAsset file = Resources.Load("Level"+ScoreManager.currentlevel) as TextAsset;
 		string content = file.ToString ();
 		json = JsonMapper.ToObject (content);
+		return int.Parse(json["food"][0].ToString());*/
+		TextAsset file = Resources.Load("Levels") as TextAsset;
+		string content = file.ToString ();
+		json = JsonMapper.ToObject (content);
+		json = json ["Levels"] [ScoreManager.currentlevel - 1];
 		return int.Parse(json["food"][0].ToString());
 	}
 }
