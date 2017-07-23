@@ -106,6 +106,7 @@
     <Compile Include="Assets\Scrips\Json\ParserToken.cs" />
     <Compile Include="Assets\Scrips\LevelCreationSpawn.cs" />
     <Compile Include="Assets\Scrips\LevelGenerator.cs" />
+    <Compile Include="Assets\Scrips\PowerManager.cs" />
     <Compile Include="Assets\Scrips\PrtcleEfct.cs" />
     <Compile Include="Assets\Scrips\SceneLoader.cs" />
     <Compile Include="Assets\Scrips\ScoreManager.cs" />
