@@ -34,10 +34,11 @@ public class LevelGenerator : MonoBehaviour {
 			v [j/2] = new Vector3 (int.Parse (json ["enemy" + (i+1).ToString ()][j+1].ToString()),int.Parse (json ["enemy" + (i+1).ToString ()][j+2].ToString()),0);
 				Debug.Log (v[j/2].ToString());
 			}
-			Instantiate(g);
+
 			g.GetComponent<EnemyAI2> ().enemyPath = v;
 
 			g.transform.position = v[0];     
+			Instantiate(g);
 
 		}
 	}
