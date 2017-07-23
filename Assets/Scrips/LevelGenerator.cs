@@ -9,15 +9,16 @@ public class LevelGenerator : MonoBehaviour {
 	public int count;
 	public int path;
 	public JsonData json;
+
 	// Use this for initialization
+<<<<<<< HEAD
 	void Start () {
+=======
+	void Start () {		
+>>>>>>> 1575590c19ecdce1215312c65b75b3b75b8a5ead
 		GenerateLevel ();
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 	public void GenerateLevel(){
 		
 		TextAsset file = Resources.Load("Levels") as TextAsset;
@@ -54,7 +55,7 @@ public class LevelGenerator : MonoBehaviour {
         for (int i = 1; i <= foodcount*2; i+=2) {
             float x = float.Parse(json["food"][i].ToString());
             float y = float.Parse(json["food"][i+1].ToString());
-            GameObject g = (GameObject)Resources.Load("cheese");
+            GameObject g = (GameObject)Resources.Load("cheese 1");
             Instantiate(g).transform.position = new Vector3(x, y, 0);
         }
     }
