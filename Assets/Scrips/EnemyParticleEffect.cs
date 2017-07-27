@@ -8,6 +8,7 @@ public class EnemyParticleEffect : MonoBehaviour {
 	ParticleSystem enemy;
 	ParticleSystem.EmissionModule em;
 
+
 	// Use this for initialization
 	void Start () {
 		enemy = boom.GetComponent<ParticleSystem> ();
@@ -18,6 +19,7 @@ public class EnemyParticleEffect : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D collision){		
 		if (collision.gameObject.name == "Enemy(Clone)") {
 			GetComponent<PolygonCollider2D> ().enabled = false;
+			GetComponent<EnemyAI2> ().enabled = false;
 			em.enabled = true;
 			GetComponent<Renderer> ().enabled = false;
 			StartCoroutine (StopBoom());
