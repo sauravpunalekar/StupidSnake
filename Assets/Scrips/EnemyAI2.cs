@@ -7,7 +7,7 @@ public class EnemyAI2 : MonoBehaviour {
     public float chaseSpeed;
     public float patrolSpeed;
     public float distanceBetween;
-    public float fieldDistance;
+    public static float fieldDistance = 3;
     public float lockTimer;
     public GameObject player;
     public Vector3 playerPosition;

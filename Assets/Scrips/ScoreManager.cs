@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour {
 	public static int currentscore;
 	public static int reqscore;
 	public static int currentlevel=1;
-	public static int maxlevel=3;
+	public static int maxlevel=4;
 	JsonData json;
 
 	// Use this for initialization
