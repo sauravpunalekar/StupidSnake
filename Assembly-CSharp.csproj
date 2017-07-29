@@ -46,10 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scrips\DestroyEnemyScript.cs" />
-     <Compile Include="Assets\Scrips\DestroyEnemyScript1.cs" />
      <Compile Include="Assets\Scrips\DestroyPlayer.cs" />
      <Compile Include="Assets\Scrips\EnemyAI2.cs" />
+     <Compile Include="Assets\Scrips\EnemyParticleEffect.cs" />
      <Compile Include="Assets\Scrips\FoodDestroy.cs" />
      <Compile Include="Assets\Scrips\Json\IJsonWrapper.cs" />
      <Compile Include="Assets\Scrips\Json\JsonData.cs" />
@@ -70,7 +69,7 @@
      <Compile Include="Assets\Scrips\SnakeMovement.cs" />
      <Compile Include="Assets\Scrips\enemyMovement.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/G3n/Documents/StupidSnake/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/aksha/Documents/Unity Projects/StupidSnake/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
