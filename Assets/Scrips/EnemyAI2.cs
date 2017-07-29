@@ -17,7 +17,7 @@ public class EnemyAI2 : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        player = GameObject.Find("Player");
+		player = GameObject.Find("Player(Clone)");
 	}
 	
 	// Update is called once per frame

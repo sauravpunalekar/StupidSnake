@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour {
 	public static int currentscore;
 	public static int reqscore;
 	public static int currentlevel=1;
-	public static int maxlevel=4;
+	public static int maxlevel=6;
 	JsonData json;
 
 	// Use this for initialization
@@ -34,15 +34,11 @@ public class ScoreManager : MonoBehaviour {
 	}
 
 	int GetReqScore()
-	{/*
-		TextAsset file = Resources.Load("Level"+ScoreManager.currentlevel) as TextAsset;
+	{
+		TextAsset file = Resources.Load("levels1") as TextAsset;
 		string content = file.ToString ();
 		json = JsonMapper.ToObject (content);
-		return int.Parse(json["food"][0].ToString());*/
-		TextAsset file = Resources.Load("Levels") as TextAsset;
-		string content = file.ToString ();
-		json = JsonMapper.ToObject (content);
-		json = json ["Levels"] [ScoreManager.currentlevel - 1];
-		return int.Parse(json["food"][0].ToString());
+		json = json[ScoreManager.currentlevel - 1];
+		return json["food"].Count;
 	}
 }

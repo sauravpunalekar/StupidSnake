@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scrips\Json\ParserToken.cs" />
      <Compile Include="Assets\Scrips\LevelCreationSpawn.cs" />
      <Compile Include="Assets\Scrips\LevelGenerator.cs" />
+     <Compile Include="Assets\Scrips\LevelGenerator2.cs" />
      <Compile Include="Assets\Scrips\PowerManager.cs" />
      <Compile Include="Assets\Scrips\PrtcleEfct.cs" />
      <Compile Include="Assets\Scrips\SceneLoader.cs" />
@@ -69,7 +70,7 @@
      <Compile Include="Assets\Scrips\SnakeMovement.cs" />
      <Compile Include="Assets\Scrips\enemyMovement.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/aksha/Documents/Unity Projects/StupidSnake/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/G3n/Documents/StupidSnake/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

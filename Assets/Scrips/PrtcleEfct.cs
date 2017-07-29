@@ -12,7 +12,7 @@ public class PrtcleEfct : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D collision){		
-		if (collision.gameObject.name == "Player") {
+		if (collision.gameObject.name == "Player(Clone)") {
             GetComponent<AudioSource>().Play();
             cheeseparticle = Instantiate(explosion, transform.position, Quaternion.Euler(new Vector3(-90,0,0))) as GameObject;
             Destroy(gameObject);
