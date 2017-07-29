@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class ScoreManager : MonoBehaviour {
 	public static int currentscore;
 	public static int reqscore;
-	public static int currentlevel=1;
+	public static int currentlevel=3;
 	public static int maxlevel=6;
 	JsonData json;
 
