@@ -40,11 +40,7 @@ public class LevelGenerator : MonoBehaviour {
 			}
 			g.GetComponent<EnemyAI2> ().enemyPath = v;
 			g.transform.position = v[0];
-			Instantiate(g);	
-
-
-
-
+			Instantiate(g);
 		}
 	}
 

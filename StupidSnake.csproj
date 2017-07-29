@@ -61,9 +61,6 @@
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>Library\UnityAssemblies\UnityEngine.TestRunner.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
@@ -90,10 +87,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scrips\DestroyEnemyScript.cs" />
-    <Compile Include="Assets\Scrips\DestroyEnemyScript1.cs" />
     <Compile Include="Assets\Scrips\DestroyPlayer.cs" />
     <Compile Include="Assets\Scrips\EnemyAI2.cs" />
+    <Compile Include="Assets\Scrips\EnemyParticleEffect.cs" />
     <Compile Include="Assets\Scrips\FoodDestroy.cs" />
     <Compile Include="Assets\Scrips\Json\IJsonWrapper.cs" />
     <Compile Include="Assets\Scrips\Json\JsonData.cs" />
